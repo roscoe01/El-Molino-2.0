@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+footer {
+  bottom: 0;
+  padding: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #82877e;
+  font-size: 16px;
+  background-color: #68755b;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}/*# sourceMappingURL=footer.css.map */

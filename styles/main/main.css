@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Julius+Sans+One&family=Poppins&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body .loteo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: red;
+  background-image: url(/assets/fondo-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  font-weight: light;
+  text-align: center;
+}
+body .loteo h1 {
+  background-color: #68755b;
+}
+body .loteo button {
+  background-color: #5a664f;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  border: none;
+  padding: 1rem;
+  border-radius: 30px;
+}
+body .ubicacion {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/fondo-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .ubicacion .ubicacion-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #68755b;
+}
+body .ubicacion .ubicacion-info .titulo-seccion {
+  font-size: 64px;
+  color: white;
+  font-weight: lighter;
+}
+body .ubicacion .ubicacion-info .ubicacion-info-texto {
+  width: 50%;
+  font-weight: bold;
+  text-align: center;
+}
+body .contacto {
+  height: 100vh;
+  background-color: pink;
+}
+body .caracteristicas {
+  height: 100vh;
+  background-color: greenyellow;
+}
+
+@media screen and (max-width: 875px) {
+  .inicio {
+    height: 100vh;
+    background-color: pink;
+  }
+  .ubicacion {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .ubicacion .mapa {
+    width: 375px;
+    height: 350px;
+  }
+  .ubicacion .ubicacion-info-texto {
+    padding: 0 30px 30px 30px;
+  }
+  .loteo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/assets/fondo-home.jpg);
+    gap: 1rem;
+    color: white;
+    font-weight: light;
+    text-align: center;
+  }
+  .loteo h1 {
+    background-color: #5a664f;
+    width: 100%;
+  }
+  .loteo .plano {
+    width: 80%;
+    height: 60%;
+  }
+  .loteo button {
+    background-color: #5a664f;
+    color: whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-size: larger;
+    border: none;
+    padding: 1rem;
+    border-radius: 30px;
+  }
+  .contacto {
+    height: 100vh;
+    background-color: pink;
+  }
+  .caracteristicas {
+    height: 100vh;
+    background-image: url(/assets/fondo-3.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .caracteristicas h1 {
+    background-color: #5a664f;
+    width: 100%;
+  }
+}/*# sourceMappingURL=main.css.map */
