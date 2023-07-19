@@ -132,9 +132,38 @@ body .caracteristicas {
     align-items: center;
     color: white;
     text-align: center;
+    gap: 1rem;
   }
   .caracteristicas h1 {
     background-color: #5a664f;
     width: 100%;
+  }
+  .caracteristicas .items {
+    height: 75%;
+    background-color: rgba(90, 102, 79, 0.7411764706);
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .caracteristicas .items .grilla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    grid-auto-rows: minmax(100px, auto);
+    list-style: none;
+  }
+  .caracteristicas .items .grilla .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(130, 146, 114, 0.5960784314);
+    padding: 0.4rem;
+  }
+  .caracteristicas .items .grilla .item i {
+    font-size: 3rem;
+  }
+  .caracteristicas .items .grilla .item .descripcion {
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */

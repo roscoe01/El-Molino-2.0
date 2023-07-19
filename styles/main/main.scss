@@ -1,158 +1,190 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Julius+Sans+One&family=Poppins&display=swap");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    .loteo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 100vh;
-        background-color: red;
-        background-image: url(/assets/fondo-home.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        align-items: center;
-        gap: 1rem;
+  font-family: "Poppins", sans-serif;
+  .loteo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: red;
+    background-image: url(/assets/fondo-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    font-weight: light;
+    text-align: center;
+
+    h1 {
+      background-color: #68755b;
+    }
+
+    button {
+      background-color: #5a664f;
+      color: whitesmoke;
+      font-family: "Poppins", sans-serif;
+      font-size: larger;
+      border: none;
+      padding: 1rem;
+      border-radius: 30px;
+    }
+  }
+
+  .ubicacion {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/fondo-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .ubicacion-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #68755b;
+
+      .titulo-seccion {
+        font-size: 64px;
         color: white;
-        font-weight: light;
+        font-weight: lighter;
+      }
+
+      .ubicacion-info-texto {
+        width: 50%;
+        font-weight: bold;
         text-align: center;
-
-        h1 {
-            background-color: #68755b;
-        }
-
-        button {
-            background-color: #5a664f;
-            color: whitesmoke;
-            font-family: "Poppins", sans-serif;
-            font-size: larger;
-            border: none;
-            padding: 1rem;
-            border-radius: 30px;
-        }
+      }
     }
+  }
 
-    .ubicacion {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: url(/assets/fondo-4.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+  .contacto {
+    height: 100vh;
+    background-color: pink;
+  }
 
-        .ubicacion-info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #68755b;
-
-            .titulo-seccion {
-                font-size: 64px;
-                color: white;
-                font-weight: lighter;
-            }
-
-            .ubicacion-info-texto {
-                width: 50%;
-                font-weight: bold;
-                text-align: center;
-            }
-        }
-    }
-
-    .contacto {
-        height: 100vh;
-        background-color: pink;
-    }
-
-    .caracteristicas {
-        height: 100vh;
-        background-color: greenyellow;
-    }
+  .caracteristicas {
+    height: 100vh;
+    background-color: greenyellow;
+  }
 }
 
 @media screen and (max-width: 875px) {
-    .inicio {
-        height: 100vh;
-        background-color: pink;
+  .inicio {
+    height: 100vh;
+    background-color: pink;
+  }
+
+  .ubicacion {
+    height: 100vh;
+    flex-direction: column;
+    .mapa {
+      width: 375px;
+      height: 350px;
+    }
+    .ubicacion-info-texto {
+      padding: 0 30px 30px 30px;
+    }
+  }
+
+  .loteo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/assets/fondo-home.jpg);
+    gap: 1rem;
+    color: white;
+    font-weight: light;
+    text-align: center;
+
+    h1 {
+      background-color: #5a664f;
+      width: 100%;
     }
 
-    .ubicacion {
-        height: 100vh;
-        flex-direction: column;
-        .mapa {
-            width: 375px;
-            height: 350px;
-        }
-        .ubicacion-info-texto {
-            padding: 0 30px 30px 30px;
-        }
+    .plano {
+      width: 80%;
+      height: 60%;
     }
 
-    .loteo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-image: url(/assets/fondo-home.jpg);
-        gap: 1rem;
-        color: white;
-        font-weight: light;
-        text-align: center;
+    button {
+      background-color: #5a664f;
+      color: whitesmoke;
+      font-family: "Poppins", sans-serif;
+      font-size: larger;
+      border: none;
+      padding: 1rem;
+      border-radius: 30px;
+    }
+  }
 
-        h1 {
-            background-color: #5a664f;
-            width: 100%;
-        }
+  .contacto {
+    height: 100vh;
+    background-color: pink;
+  }
 
-        .plano {
-            width: 80%;
-            height: 60%;
-        }
+  .caracteristicas {
+    height: 100vh;
+    background-image: url(/assets/fondo-3.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-        button {
-            background-color: #5a664f;
-            color: whitesmoke;
-            font-family: "Poppins", sans-serif;
-            font-size: larger;
-            border: none;
-            padding: 1rem;
-            border-radius: 30px;
-        }
+    color: white;
+    text-align: center;
+    gap: 1rem;
+
+    h1 {
+      background-color: #5a664f;
+      width: 100%;
     }
 
-    .contacto {
-        height: 100vh;
-        background-color: pink;
-    }
+    .items {
+      height: 75%;
+      background-color: #5a664fbd;
 
-    .caracteristicas {
-        height: 100vh;
-        background-image: url(/assets/fondo-3.jpg);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      .grilla {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.6rem;
+        grid-auto-rows: minmax(100px, auto);
+        list-style: none;
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #82927298;
+          padding: 0.4rem;
 
-        color: white;
-        text-align: center;
-
-        h1 {
-            background-color: #5a664f;
-            width: 100%;
+          i {
+            font-size: 3rem;
+          }
+          .descripcion {
+            text-align: center;
+          }
         }
+      }
     }
+  }
 }

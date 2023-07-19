@@ -1,88 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>El Molino - Roldán</title>
-        <link rel="stylesheet" href="/styles/navbar/navbar.css" />
-        <link rel="stylesheet" href="/styles/footer/footer.css" />
-        <link rel="stylesheet" href="/styles/main/main.css" />
-        <link
-            rel="shortcut icon"
-            href="/assets/favicon.ico"
-            type="image/x-icon"
-        />
-    </head>
-    <body>
-        <header>
-            <img
-                class="logo"
-                src="/assets/logo_blanco_home.png"
-                alt="El Molino Roldán"
-            />
-            <button class="abrir-menu" id="abrir">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <nav class="nav nav-visible" id="nav">
-                <div class="cerrar-menu-caja">
-                    <button class="cerrar-menu" id="cerrar">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#inicio" class="link" id="link">Inicio</a></li>
-                    <li><a href="#loteo" class="link" id="link">Loteo</a></li>
-                    <li>
-                        <a href="#caracteristicas" class="link" id="link"
-                            >Caracteristicas</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#ubicacion" class="link" id="link"
-                            >Ubicación</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#contacto" class="link" id="link">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Molino - Roldán</title>
+    <link rel="stylesheet" href="/styles/navbar/navbar.css" />
+    <link rel="stylesheet" href="/styles/footer/footer.css" />
+    <link rel="stylesheet" href="/styles/main/main.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="/assets/logo_blanco_home.png"
+        alt="El Molino Roldán"
+      />
+      <button class="abrir-menu" id="abrir">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav class="nav nav-visible" id="nav">
+        <div class="cerrar-menu-caja">
+          <button class="cerrar-menu" id="cerrar">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#inicio" class="link" id="link">Inicio</a></li>
+          <li><a href="#loteo" class="link" id="link">Loteo</a></li>
+          <li>
+            <a href="#caracteristicas" class="link" id="link"
+              >Caracteristicas</a
+            >
+          </li>
+          <li>
+            <a href="#ubicacion" class="link" id="link">Ubicación</a>
+          </li>
+          <li>
+            <a href="#contacto" class="link" id="link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <div class="container">
-            <div class="inicio" id="inicio"></div>
-            <div class="caracteristicas" id="caracteristicas">
-                <h1>Caracteristicas</h1>
-            </div>
-            <div class="loteo" id="loteo">
-                <h1>Loteo</h1>
-                <p>
-                    33 hectáreas urbanizadas. <br />
-                    350 lotes de 450m2 a 1300m2.
-                </p>
-                <img
-                    src="/assets/plano_mensura_grande.jpg"
-                    alt="Plano"
-                    class="plano"
-                />
-                <a href="/assets/planoPDF.pdf" download
-                    ><button>Descargar PDF</button></a
-                >
-            </div>
-            <div class="ubicacion" id="ubicacion">
-                <div class="ubicacion-info">
-                    <h1 class="titulo-seccion">Ubicación</h1>
-                    <p class="ubicacion-info-texto">
-                        A sólo 20 minutos de la ciudad de Rosario.
-                        <br />
-                        Ruta 9 y calle San Sebastián.
-                        <br />
-                        Acceso directo desde colectora autopista
-                        Rosario-Córdoba.
-                    </p>
-                    <div>
-                        <!-- <iframe
+    <div class="container">
+      <div class="caracteristicas" id="caracteristicas">
+        <h1>Características</h1>
+        <div class="items">
+          <ul class="grilla">
+            <li class="item">
+              <i class="fa-solid fa-lightbulb"></i>
+              <p class="descripcion">Energía Eléctrica</p>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-droplet"></i>
+              <p class="descripcion">Planta Potabilizadora de Agua</p>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-fire"></i>
+              <p class="descripcion">Gas Natural</p>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-person-swimming"></i>
+              <p class="descripcion">Area Social y Deportiva</p>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-piggy-bank"></i>
+              <p class="descripcion">Sin Expensas</p>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-car-side"></i>
+              <p class="descripcion">Mejorado de Calles de excelente calidad</p>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-stopwatch-20"></i>
+              <p class="descripcion">A 20 minutos de Rosario</p>
+            </li>
+            <li class="item">
+              <i class="fa-solid fa-tree"></i>
+              <p class="descripcion">
+                Forestación en Area de Servicios y Lotes
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="inicio" id="inicio"></div>
+      <div class="loteo" id="loteo">
+        <h1>Loteo</h1>
+        <p>
+          33 hectáreas urbanizadas. <br />
+          350 lotes de 450m2 a 1300m2.
+        </p>
+        <img src="/assets/plano_mensura_grande.jpg" alt="Plano" class="plano" />
+        <a href="/assets/planoPDF.pdf" download
+          ><button>Descargar PDF</button></a
+        >
+      </div>
+      <div class="ubicacion" id="ubicacion">
+        <div class="ubicacion-info">
+          <h1 class="titulo-seccion">Ubicación</h1>
+          <p class="ubicacion-info-texto">
+            A sólo 20 minutos de la ciudad de Rosario.
+            <br />
+            Ruta 9 y calle San Sebastián.
+            <br />
+            Acceso directo desde colectora autopista Rosario-Córdoba.
+          </p>
+          <div>
+            <!-- <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.8925513947183!2d-60.87504521837946!3d-32.927436985617156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64b7ce54627a7%3A0x35df70c10728dfde!2sEl%20molino%20Roldan!5e0!3m2!1ses!2sar!4v1689620394385!5m2!1ses!2sar"
                             width="1200"
                             height="600"
@@ -92,63 +119,51 @@
                             referrerpolicy="no-referrer-when-downgrade"
                             class="mapa"
                         ></iframe> -->
-                    </div>
-                </div>
-            </div>
-            <div class="contacto" id="contacto"></div>
+          </div>
         </div>
+      </div>
+      <div class="contacto" id="contacto"></div>
+    </div>
 
-        <footer class="footer">
-            <a href="/pages/home.html">
-                <img src="/assets/logoNegro.png" alt="" />
-            </a>
-            <div>
-                <p>
-                    <i class="fa-solid fa-phone"></i> Teléfono: (0341) -
-                    155093583
-                </p>
-                <p>
-                    <i class="fa-solid fa-location-dot"></i> Ubicación: Roldán.
-                    Autopista Rosario - Córdoba Km.36
-                </p>
-            </div>
-            <div>
-                <p>
-                    <i class="fa-solid fa-envelope"></i> Email:
-                    contacto@elmolino.com
-                </p>
-                <p>
-                    <i class="fa-solid fa-clock"></i> Horarios: Lunes a Viernes
-                    de 8:00 a 18:00 <br />
-                    Sábados y feriados de 10:00 a 14:00
-                </p>
-            </div>
+    <footer class="footer">
+      <a href="/pages/home.html">
+        <img src="/assets/logoNegro.png" alt="" />
+      </a>
+      <div>
+        <p><i class="fa-solid fa-phone"></i> Teléfono: (0341) - 155093583</p>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Ubicación: Roldán. Autopista
+          Rosario - Córdoba Km.36
+        </p>
+      </div>
+      <div>
+        <p><i class="fa-solid fa-envelope"></i> Email: contacto@elmolino.com</p>
+        <p>
+          <i class="fa-solid fa-clock"></i> Horarios: Lunes a Viernes de 8:00 a
+          18:00 <br />
+          Sábados y feriados de 10:00 a 14:00
+        </p>
+      </div>
 
-            <div>
-                <p>Redes Sociales</p>
-                <p class="socialMedia">
-                    <a
-                        href="https://www.instagram.com/elmolinoroldan/"
-                        target="_blank"
-                        ><i class="fa-brands fa-instagram"></i
-                    ></a>
-                    <a
-                        href="https://www.facebook.com/Clubmolino"
-                        target="_blank"
-                        ><i class="fa-brands fa-facebook"></i
-                    ></a>
-                    <a
-                        href="https://www.youtube.com/@elmolinoroldan3393"
-                        target="_blank"
-                        ><i class="fa-brands fa-youtube"></i
-                    ></a>
-                </p>
-            </div>
-        </footer>
-        <script
-            src="https://kit.fontawesome.com/353b7e874e.js"
-            crossorigin="anonymous"
-        ></script>
-        <script src="/src/main.js"></script>
-    </body>
+      <div>
+        <p>Redes Sociales</p>
+        <p class="socialMedia">
+          <a href="https://www.instagram.com/elmolinoroldan/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/Clubmolino" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.youtube.com/@elmolinoroldan3393" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/353b7e874e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/main.js"></script>
+  </body>
 </html>
