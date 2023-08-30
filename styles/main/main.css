@@ -41,29 +41,7 @@ body .loteo button {
 }
 body .ubicacion {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(/assets/fondo-4.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body .ubicacion .ubicacion-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #68755b;
-}
-body .ubicacion .ubicacion-info .titulo-seccion {
-  font-size: 64px;
-  color: white;
-  font-weight: lighter;
-}
-body .ubicacion .ubicacion-info .ubicacion-info-texto {
-  width: 50%;
-  font-weight: bold;
-  text-align: center;
+  background-image: url(/assets/fondo-6.jpg);
 }
 body .contacto {
   height: 100vh;
@@ -71,24 +49,54 @@ body .contacto {
 }
 body .caracteristicas {
   height: 100vh;
-  background-color: greenyellow;
+  background-image: url(/assets/fondo-3.jpg);
 }
 
 @media screen and (max-width: 875px) {
   .inicio {
     height: 100vh;
-    background-color: pink;
+    background-image: url(/assets/fondo-5.jpg);
+  }
+  .inicio .cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 20px;
+  }
+  .inicio .cabecera .descripcion {
+    text-align: center;
+    font-style: italic;
+  }
+  .inicio .video {
+    display: flex;
+    justify-content: center;
   }
   .ubicacion {
-    height: 100vh;
+    display: flex;
+  }
+  .ubicacion .ubicacion-info {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    text-align: center;
   }
-  .ubicacion .mapa {
-    width: 375px;
-    height: 350px;
+  .ubicacion .ubicacion-info h1 {
+    background-color: #5a664f;
+    color: white;
+    width: 100%;
   }
-  .ubicacion .ubicacion-info-texto {
-    padding: 0 30px 30px 30px;
+  .ubicacion .ubicacion-info .mapa {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(144, 163, 126, 0.5607843137);
+    height: 380px;
+    align-items: center;
+  }
+  .ubicacion .ubicacion-info .ubicacion-info-texto {
+    color: white;
   }
   .loteo {
     display: flex;
@@ -124,8 +132,6 @@ body .caracteristicas {
     background-color: pink;
   }
   .caracteristicas {
-    height: 100vh;
-    background-image: url(/assets/fondo-3.jpg);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,7 +145,7 @@ body .caracteristicas {
     width: 100%;
   }
   .caracteristicas .items {
-    height: 75%;
+    height: 500px;
     background-color: rgba(90, 102, 79, 0.7411764706);
     width: 100%;
     display: flex;
