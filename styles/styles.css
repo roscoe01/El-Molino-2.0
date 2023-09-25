@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Niramit&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Niramit", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.parallax-inicio {
+  background-image: url("/assets/fondo_home_3.jpg");
+  min-height: 800px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.parallax-inicio img {
+  height: 200px;
+  width: 400;
+  pointer-events: none;
+}
+.parallax-inicio .links-box {
+  display: flex;
+  gap: 50px;
+}
+.parallax-inicio .links-box a {
+  text-decoration: none;
+  font-weight: lighter;
+  color: white;
+  font-size: 18px;
+}
+.parallax-inicio .links-box a :hover {
+  transform: scale(1.1);
+  transition: all 500ms ease-in-out;
+}
+
+.loteo-box {
+  min-height: 800px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+.loteo-box .mapa-loteo-box {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.loteo-box .mapa-loteo-box img {
+  width: 500px;
+  height: 600px;
+}
+.loteo-box .mapa-loteo-box button {
+  background-color: #5a664f;
+  color: white;
+  font-size: 18px;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.loteo-box .caracteristicas-loteo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.loteo-box .caracteristicas-loteo-box .texto-box .numero {
+  color: black;
+  font-size: 50px;
+  font-weight: bold;
+}
+.loteo-box .caracteristicas-loteo-box .texto-box p {
+  margin-top: -20px;
+  color: #68755b;
+  font-size: 36px;
+}
+
+.galeria {
+  min-height: 700px;
+  background-color: #e8e8e8;
+}/*# sourceMappingURL=styles.css.map */
