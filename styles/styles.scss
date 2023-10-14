@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Niramit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 html {
     scroll-behavior: smooth;
@@ -12,13 +13,17 @@ html {
     user-select: none;
 }
 
+.resaltado {
+    color: #5a664f;
+}
+
 .parallax-inicio {
     background-image: url("/assets/fondo_home_3.jpg");
-    min-height: 800px;
+    min-height: 950px;
 
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     display: flex;
     justify-content: center;
@@ -27,28 +32,48 @@ html {
     gap: 20px;
 
     img {
-        height: 200px;
+        height: 250px;
         width: 400;
         pointer-events: none;
     }
     .links-box {
         display: flex;
-        gap: 50px;
+        gap: 40px;
+        background-color: #9797977e;
+        padding: 15px;
+        border-radius: 30px;
         a {
             text-decoration: none;
             font-weight: lighter;
             color: white;
-            font-size: 18px;
-            :hover {
+            font-size: 20px;
+            &:hover {
                 transform: scale(1.1);
-                transition: all 500ms ease-in-out;
+                transition: all 250ms ease-out;
             }
         }
     }
 }
 
+.presentacion-box {
+    min-height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #e8e8e8;
+    .titulo-presentacion {
+        font-family: "Quicksand", sans-serif;
+        font-size: 48px;
+    }
+    .descripcion-presentacion {
+        width: 900px;
+        font-size: 18px;
+    }
+}
+
 .loteo-box {
-    min-height: 800px;
+    min-height: 950px;
     background-color: #f6f6f6;
     display: flex;
     justify-content: center;
@@ -61,18 +86,24 @@ html {
         flex-direction: column;
         gap: 20px;
         img {
-            width: 500px;
-            height: 600px;
+            width: 550px;
+            height: 750px;
         }
-        button {
+        a {
+            text-decoration: none;
             background-color: #5a664f;
             color: white;
             font-size: 18px;
+            text-align: center;
             width: 150px;
             padding: 10px;
             border-radius: 10px;
             border: none;
             cursor: pointer;
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background-color: rgb(62, 75, 50);
+            }
         }
     }
     .caracteristicas-loteo-box {
@@ -83,21 +114,76 @@ html {
         gap: 50px;
 
         .texto-box {
+            width: 500px;
             .numero {
                 color: black;
-                font-size: 50px;
+                font-size: 60px;
                 font-weight: bold;
             }
             p {
                 margin-top: -20px;
                 color: #68755b;
-                font-size: 36px;
+                font-size: 42px;
             }
         }
     }
 }
 
 .galeria {
-    min-height: 700px;
+}
+
+.caracteristicas-box {
+    min-height: 650px;
     background-color: #e8e8e8;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    .caracteristicas-items-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        list-style: none;
+
+        height: 250px;
+
+        .item {
+            width: 175px;
+            height: 175px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            background-color: #6e9ece;
+            color: whitesmoke;
+
+            i {
+                font-size: 60px;
+            }
+            p {
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.ubicacion {
+    background-image: url("/assets/fondo_home_4.jpg");
+    min-height: 1000px;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
 }

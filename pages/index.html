@@ -10,24 +10,63 @@
             href="/assets/favicon.ico"
             type="image/x-icon"
         />
+        <link rel="stylesheet" href="/styles/animate.css" />
     </head>
     <body>
         <div class="parallax-inicio">
             <img src="/assets/logo_blanco_home.png" alt="" />
             <div class="links-box">
-                <a href="">Loteo</a>
-                <a href="">Caracteristicas</a>
+                <a href="#loteo">Loteo</a>
+                <a href="#caracteristicas">Caracteristicas</a>
+                <a href="#ubicacion">Ubicación</a>
                 <a href="">Galeria</a>
                 <a href="">Contacto</a>
             </div>
         </div>
-        <div class="galeria"></div>
-        <div class="loteo-box">
-            <div class="mapa-loteo-box">
-                <img src="/assets/plano_mensura_grande.jpg" alt="" />
-                <button>Descargar PDF</button>
+
+        <div class="presentacion-box">
+            <div>
+                <p class="titulo-presentacion">
+                    ¿Qué es <span class="resaltado">El Molino</span>?
+                </p>
+                <p class="descripcion-presentacion">
+                    El Molino es un barrio residencial abierto ubicado en
+                    Roldán, a tan solo 20 minutos de la Ciudad de Rosario, con
+                    un acceso directo desde colectora autopista Rosario-Córdoba.
+                    <br />
+                    Cuenta con Forestación en acceso principal, áreas de
+                    servicios y lotes, Mejorado de calles de excelente calidad y
+                    terminación, Alumbrado público en calles y todos los
+                    servicios necesarios para que vivas tranquilo y seguro.
+                    <br />
+                    Disfrutar la brisa entre los árboles. Apreciar los colores
+                    del arcoiris tras la lluvia. Compartir un asado con familia
+                    y amigos. Ver abrir las flores que plantaste. Aire, agua,
+                    fuego y tierra. Los cuatro elementos de la naturaleza, a tu
+                    alcance.
+                </p>
             </div>
-            <div class="caracteristicas-loteo-box">
+            <div>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/a1gidzdkubE?si=UIJX_6amaZ1BpF_T"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+
+        <div class="loteo-box" id="loteo">
+            <div class="mapa-loteo-box wow slideInLeft">
+                <img src="/assets/plano_mensura.jpg" alt="" />
+                <a type="button" download href="/assets/planoPDF.pdf">
+                    Descargar PDF
+                </a>
+            </div>
+            <div class="caracteristicas-loteo-box wow slideInRight">
                 <div class="texto-box">
                     <span class="numero">33</span>
                     <p>hectáreas urbanizadas</p>
@@ -36,15 +75,89 @@
                 </div>
 
                 <iframe
-                    width="400"
-                    height="250"
+                    width="500"
+                    height="360"
                     src="https://www.youtube.com/embed/GLVGt9NoJ1I?si=0wil-DOSFiEDMqr0"
-                    title="YouTube video player"
+                    title="Caracteristicas El Molino"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen
                 ></iframe>
             </div>
         </div>
+
+        <div class="caracteristicas-box" id="caracteristicas">
+            <div class="wow fadeInDown">
+                <h2>Principales Características</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eum quas temporibus praesentium assumenda tempora illum a
+                    officiis laboriosam quam beatae eos, eaque, repellendus
+                    ratione quisquam placeat consequuntur! Ab, sed quidem.
+                </p>
+            </div>
+
+            <ul class="caracteristicas-items-box wow fadeInUp">
+                <li class="item">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p class="descripcion">Energía Eléctrica</p>
+                </li>
+                <li class="item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <p class="descripcion">Planta Potabilizadora</p>
+                </li>
+                <li class="item">
+                    <i class="fa-solid fa-fire"></i>
+                    <p class="descripcion">Gas Natural</p>
+                </li>
+                <li class="item">
+                    <i class="fa-solid fa-person-swimming"></i>
+                    <p class="descripcion">Area Social y Deportiva</p>
+                </li>
+            </ul>
+            <ul class="caracteristicas-items-box wow fadeInUp">
+                <li class="item">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                    <p class="descripcion">Sin Expensas</p>
+                </li>
+                <li class="item">
+                    <i class="fa-solid fa-car-side"></i>
+                    <p class="descripcion">Mejorado de Calles</p>
+                </li>
+                <li class="item">
+                    <i class="fa-solid fa-stopwatch-20"></i>
+                    <p class="descripcion">A 20 minutos de Rosario</p>
+                </li>
+                <li class="item">
+                    <i class="fa-solid fa-tree"></i>
+                    <p class="descripcion">
+                        Forestación en Area de Servicios y Lotes
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="galeria"></div>
+        <div class="ubicacion" id="ubicacion">
+            <iframe
+                class="wow slideInLeft"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6697.86997926949!2d-60.87672428118819!3d-32.926315812171616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64b7ce54627a7%3A0x35df70c10728dfde!2sEl%20molino%20Roldan!5e0!3m2!1ses-419!2sar!4v1695751326573!5m2!1ses-419!2sar"
+                width="700"
+                height="550"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+
+        <script src="/src/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script
+            src="https://kit.fontawesome.com/353b7e874e.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
