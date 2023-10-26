@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>El Molino - Roldán</title>
         <link rel="stylesheet" href="/styles/styles.css" />
         <link
             rel="shortcut icon"
@@ -11,6 +10,8 @@
             type="image/x-icon"
         />
         <link rel="stylesheet" href="/styles/animate.css" />
+        <script src="/src/slider.js"></script>
+        <title>El Molino - Roldán</title>
     </head>
     <body>
         <div class="parallax-inicio">
@@ -19,8 +20,8 @@
                 <a href="#loteo">Loteo</a>
                 <a href="#caracteristicas">Caracteristicas</a>
                 <a href="#ubicacion">Ubicación</a>
-                <a href="">Galeria</a>
-                <a href="">Contacto</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#contacto">Contacto</a>
             </div>
         </div>
 
@@ -29,7 +30,7 @@
                 <p class="titulo-presentacion">
                     ¿Qué es <span class="resaltado">El Molino</span>?
                 </p>
-                <p class="descripcion-presentacion">
+                <p class="descripcion-presentacion wow fadeInUp">
                     El Molino es un barrio residencial abierto ubicado en
                     Roldán, a tan solo 20 minutos de la Ciudad de Rosario, con
                     un acceso directo desde colectora autopista Rosario-Córdoba.
@@ -88,7 +89,7 @@
 
         <div class="caracteristicas-box" id="caracteristicas">
             <div class="wow fadeInDown">
-                <h2>Principales Características</h2>
+                <p class="titulo">Principales Características</p>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Eum quas temporibus praesentium assumenda tempora illum a
@@ -137,18 +138,64 @@
             </ul>
         </div>
 
-        <div class="galeria"></div>
-        <div class="ubicacion" id="ubicacion">
-            <iframe
-                class="wow slideInLeft"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6697.86997926949!2d-60.87672428118819!3d-32.926315812171616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64b7ce54627a7%3A0x35df70c10728dfde!2sEl%20molino%20Roldan!5e0!3m2!1ses-419!2sar!4v1695751326573!5m2!1ses-419!2sar"
-                width="700"
-                height="550"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+        <!-- <div class="galeria" id="galeria">
+            <h1>Galería</h1>
+            <div class="container-slider">
+                <div class="slider" id="slider">
+                    <div class="slider_section">
+                        <img
+                            src="/assets/Galeria/Galeria-1.jpg"
+                            alt=""
+                            class="slider__img"
+                        />
+                    </div>
+                    <div class="slider_section">
+                        <img
+                            src="/assets/Galeria/Galeria-2.jpg"
+                            alt=""
+                            class="slider__img"
+                        />
+                    </div>
+                    <div class="slider_section">
+                        <img
+                            src="/assets/Galeria/Galeria-3.jpg"
+                            alt=""
+                            class="slider__img"
+                        />
+                    </div>
+                    <div class="slider_section">
+                        <img
+                            src="/assets/Galeria/Galeria-4.jpg"
+                            alt=""
+                            class="slider__img"
+                        />
+                    </div>
+                    <div class="slider_btn slider__btn--right">&#60;</div>
+                    <div class="slider_btn slider__btn--left">&#60;</div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="ubicacion" id="ubicacion">
+            <div>
+                <p class="titulo">Ubicación</p>
+            </div>
+            <div class="mapa">
+                <iframe
+                    class="wow slideInLeft mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6697.86997926949!2d-60.87672428118819!3d-32.926315812171616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b64b7ce54627a7%3A0x35df70c10728dfde!2sEl%20molino%20Roldan!5e0!3m2!1ses-419!2sar!4v1695751326573!5m2!1ses-419!2sar"
+                    width="700"
+                    height="400"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+            </div>
+        </div> -->
+
+        <div class="under-construction">
+            <p>El sitio aún está en construcción!</p>
+            <img src="/assets/bob.png" alt="" />
         </div>
 
         <script src="/src/wow.min.js"></script>

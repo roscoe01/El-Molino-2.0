@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Niramit", sans-serif;
+  font-family: "Quicksand", sans-serif;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -16,6 +16,11 @@ html {
 
 .resaltado {
   color: #5a664f;
+}
+
+.titulo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 48px;
 }
 
 .parallax-inicio {
@@ -43,6 +48,7 @@ html {
   border-radius: 30px;
 }
 .parallax-inicio .links-box a {
+  font-family: "Niramit", sans-serif;
   text-decoration: none;
   font-weight: lighter;
   color: white;
@@ -66,6 +72,8 @@ html {
   font-size: 48px;
 }
 .presentacion-box .descripcion-presentacion {
+  text-align: justify;
+  margin-top: 10px;
   width: 900px;
   font-size: 18px;
 }
@@ -121,6 +129,7 @@ html {
   font-weight: bold;
 }
 .loteo-box .caracteristicas-loteo-box .texto-box p {
+  font-family: "Niramit", sans-serif;
   margin-top: -20px;
   color: #68755b;
   font-size: 42px;
@@ -151,7 +160,7 @@ html {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #6e9ece;
+  background-color: #78886a;
   color: whitesmoke;
 }
 .caracteristicas-box .caracteristicas-items-box .item i {
@@ -163,11 +172,31 @@ html {
 }
 
 .ubicacion {
-  background-image: url("/assets/fondo_home_4.jpg");
-  min-height: 1000px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  min-height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background-color: #f6f6f6;
+}
+.ubicacion iframe {
+  justify-self: center;
+  border: #5a664f 3px solid;
+}
+
+.under-construction {
+  min-height: 600px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  background-color: #f6f6f6;
+  border: 10px solid yellow;
+}
+.under-construction p {
+  font-size: 32px;
+}
+.under-construction img {
+  width: 200px;
 }/*# sourceMappingURL=styles.css.map */
