@@ -24,7 +24,7 @@ html {
 }
 
 .parallax-inicio {
-  background-image: url("/assets/fondo_home_3.jpg");
+  background-image: url("assets/fondoHome3.png");
   min-height: 950px;
   background-attachment: fixed;
   background-repeat: no-repeat;
